@@ -1,0 +1,384 @@
+body {
+    
+    background: rgb(208,218,227);
+    background: linear-gradient(90deg, rgba(208,218,227,1) 21%, rgba(202,213,223,1) 41%, rgba(142,165,181,1) 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+.tudo{
+    display: flex;
+    justify-content: center;
+}
+.main {
+    margin-left: 50%;
+    margin-top: 10%;
+    width: 30%;
+    height: 75%;
+    max-height: 30vw /*30vw*/;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0.6% 0.6% 0.9% 0.2% #24004628;
+    border-radius: 10%;
+}
+.pessoa_login{
+    position: absolute;
+    left: -0.6%;
+    width: 50vw;
+    height: auto;
+}
+@media (max-width:768px){
+    .pessoa_login {
+        display: none; /* Escondido para telas menores */
+    }
+    .main{
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;
+        margin-left: 0%;
+        width: 50%;
+        height: 40%;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    padding: 8%;
+}
+
+#chk {
+    display: none;
+}
+#chk2 {
+    display: none;
+}
+/*Login*/
+.login {
+    position: relative;
+    width: 100%;
+    height: 500%;
+}
+
+.login label {
+    margin: 5% 1% 5%;
+}
+
+.fraseinter {
+    color: #000000;
+    font-size: 1.3vw;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+
+.linkinter{
+    margin-left: 2% aq;
+}
+.linkinter:hover{
+    color: rgba(17, 66, 226, 0.733);
+    position: relative;
+    
+}
+
+.label {
+    color: #000000;
+    font-size: 1vw;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.input {
+    width: 15vw;
+    height: 2.5vw;
+    background: #ffffff;
+    padding: 1vw;
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+}
+
+/*Registro*/
+.register {
+    border-radius: 0;
+    transform: translateY(5%);
+    transition: .4s ease-in-out;
+    margin-top: -6%;
+}
+
+.register label {
+    color: #000000;
+    transform: scale(.6);
+}
+
+#chk:checked~.register {
+    transform: translateY(-100%);
+}
+
+#chk:checked~.login {
+    transform: translateY(100%);
+    
+}
+
+#chk:checked~.register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked~.login label {
+    transform: scale(.6);
+    margin: 2vw 0 2vw;
+}
+
+/*Botões*/
+.form button {
+    width: 20vw;
+    height: 3vw;
+    margin: 0vw auto 1vw;
+    color: rgb(0, 0, 150);
+    background: rgb(195, 250, 255);
+    font-size: 1vw;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    transition: .2s ease-in;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -1vw;
+    transition: 0.5s;
+}
+.continuar{
+    font-size: 0.9vw;
+    margin-left: -3vw;
+}
+.form button:hover {
+    background-color: rgb(0, 170, 255);
+    transition: 0.2s;
+}
+
+.icon {
+    margin-top: -1%;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.oauthButton {
+    font-size: 1vw;
+}
+
+.lol {
+    display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;
+        margin-left: -1%;
+    font-weight: 600;
+    margin-top: -8%;
+    font-size: 2vw;
+    color: rgb(0, 10, 80);
+}
+
+/*animação input*/
+
+.input-container {
+    position: relative;
+    margin-left: 0 ;
+    width: 100%;
+    border-bottom: #000 solid 0.1vw;
+    margin-top: -5%;
+    
+  }
+  
+  .input-container input[type="text"] {
+    font-size: 1.7vw;
+    width: 100%;
+    border: none;
+    border-top: 2% solid #ffffff;
+    padding: 2% 0;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .input-container .label {
+    position: absolute;
+    top: 0;
+    font-size: 1vw ;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="text"]:focus ~ .label,
+  .input-container input[type="text"]:valid ~ .label {
+    top: -70%;
+    font-size: 1vw;
+    color: #333;
+  }
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+
+  /*Parte Cadastro*/
+
+  .lol2 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    font-weight: 600;
+    font-size: 2vw;
+    color: rgb(0, 10, 80);
+    position: relative;
+    
+}
+  .input-container2 {
+    position: relative;
+    margin-left: 0 ;
+    width: 100%;
+    border-bottom: #000 solid 0.1vw;
+    margin-bottom: 2%;
+    
+  }
+  .input-container2 input[type="text"] {
+    font-size: 1.7vw;
+    width: 100%;
+    border: none;
+    border-top: 2% solid #ffffff;
+    padding: 2% 0;
+    background-color: transparent;
+    outline: none;
+  }
+
+  
+  .input-container2 .label {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container2 input[type="text"]:focus ~ .label,
+  .input-container2 input[type="text"]:valid ~ .label {
+    top: -110%;
+    font-size: 1vw;
+    color: #333;
+  }
+  
+  .input-container2 input[type="email"]:focus ~ .label,
+  .input-container2 input[type="email"]:valid ~ .label {
+    top: -110%;
+    font-size: 1vw;
+    color: #333;
+  }
+  .input-container input[type="email"]:focus ~ .label,
+  .input-container input[type="email"]:valid ~ .label {
+    top: -70%;
+    font-size: 1vw;
+    color: #333;
+  }
+  .input-container2 .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container2 input[type="text"]:focus ~ .underline,
+  .input-container2 input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  .input-container2 input[type="email"]:focus ~ .underline,
+  .input-container2 input[type="email"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  .input-container input[type="email"]:focus ~ .underline,
+  .input-container input[type="email"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  
+  /*Esqueci a Senha*/
+ 
+#chk2:checked~.esqueci {
+    transform: translateY(-240%);
+}
+
+#chk2:checked~.login {
+    transform: translateY(-200%);
+}
+
+#chk2:checked~.esqueci label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk2:checked~.login label {
+    transform: scale(.6);
+    margin: 2vw 0 2vw;
+}
+
+.input-container2 input[type="email"] {
+    font-size: 1.7vw;
+    width: 100%;
+    border: none;
+    border-top: 2% solid #ffffff;
+    padding: 2% 0;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .input-container input[type="email"] {
+    font-size: 1.7vw;
+    width: 100%;
+    border: none;
+    border-top: 2% solid #ffffff;
+    padding: 2% 0;
+    background-color: transparent;
+    outline: none;
+  }
+  .lol3 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    font-weight: 600;
+    font-size: 2vw;
+    color: rgb(0, 10, 80);
+    margin-top: 0%;
+    position: relative;
+    
+}

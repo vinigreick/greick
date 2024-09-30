@@ -1,0 +1,299 @@
+<!--cabeçalho-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--Link SwiperJS script-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Oculare</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'CSS/fas.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<!--Link SwiperJS script-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Agendamento</a></li>
+        </ul>
+    </nav>
+
+
+
+
+<!--rodapé-->
+
+<footer>
+    <div class="ondas">
+        <div class="onda" id="onda0"></div>
+        <div class="onda" id="onda1"></div>
+        <div class="onda" id="onda2"></div>
+        <div class="onda" id="onda3"></div>
+    </div>
+    <!--<h3>Contato</h3>
+    <p>Av. Cap. Júlio Bezerra, 573 - Centro, Boa Vista - RR, 69301-410</p>
+    <p>Email: boavista@outlook.com.br</p>
+    <p>Telefone: +55 95 xxxx-xxxx</p>
+    <center><h6>Copyright © Boa Vista Oftamologia. Todos os direitos reservados.</h6></center>-->
+    <ul class="icone">
+        
+        <li><a class="icon0"  href="#"><ion-icon name="location" class="location"></ion-icon></a></li>
+        <li><a class="icon1" href="#"><ion-icon name="call"></ion-icon></a></li>
+        <li><a class="icon2" href="#"><ion-icon name="at-circle"></ion-icon></a></li>
+    
+    </ul>
+    <p>Copyright © Boa Vista Oftamologia. Todos os direitos reservados.</p>
+  
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </footer>
+
+  <style>
+    *{
+    font-family: "Inconsolata", monospace;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    footer{
+    position: relative;
+    background-color: #3586ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 190px;
+    padding: 20px 50px;
+}
+.icone{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.icone li{
+    list-style: none;
+}
+.icone li a{
+    font-size: 3em;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.icone li a:hover{
+    transform: translatey(-1vw);
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+footer .onda{
+position: absolute;
+top: -100px;
+left: 0;
+width: 100%;
+height: 100px;
+background: url(/core/static/img/WAVE.png);
+background-size: 1000px 100px;
+}
+
+footer .onda#onda0{
+    z-index: 1000;
+    opacity: 1;
+    bottom:0;
+    animation: animateWave 4s linear infinite;
+}
+footer .onda#onda1{
+    z-index: 999;
+    opacity: 0.5;
+    bottom:10px;
+    animation: animateWave_2 4s linear infinite;
+}
+footer .onda#onda2{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom:10px;
+    animation: animateWave_3 4s linear infinite;
+}
+footer .onda#onda3{
+    z-index: 999;
+    opacity: 0.7;
+    bottom:10px;
+    animation: animateWave_4 4s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px ;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_2{
+    0%{
+        background-position-x: 0px ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_3{
+    0%{
+        background-position-x: 1000px ;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_4{
+    0%{
+        background-position-x: 0px ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+\* cabeçalho*/
+.direita {
+            opacity: 0; /* Inicialmente invisível */
+            transform: translateX(1vw); /* Deslocado para a direita */
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Transição suave */
+        }
+        
+        .direita.show {
+            opacity: 1; /* Visível */
+            transform: translateX(0); /* Volta para a posição original */
+        }
+        .esquerda {
+            opacity: 0; /* Inicialmente invisível */
+            transform: translateX(-2vw); /* Deslocado totalmente para a esquerda */
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Transição suave */
+          }
+          
+          .esquerda.show {
+            opacity: 1; /* Visível */
+            transform: translateX(0); /* Volta para a posição original */
+          }
+          
+  
+        .fonte_grande{
+            font-family: Montserrat;
+        }
+        #fonte_grande{
+            font-family: Montserrat;
+        }
+        *{
+            font-family: "Inconsolata", monospace;
+            text-align: justify;
+        }
+        .oculare{
+            color: #28c2d6;
+        }
+        .inicio{
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            
+        }
+        header {
+            width: 90vw;
+            margin-top: 1.6vh !important;
+            background-color: #CCCCCC;
+            color: #06658D;
+            text-align: center;
+            display: flex;
+            align-items: center; /* Centraliza verticalmente */
+            border-radius: 1vw;
+            height: 12vh; 
+            opacity: 85%;
+            border: #888888 0.01vw solid;
+            box-shadow: 1vw 1vw 0.8vw #888888;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100vw;
+                
+        }
+       
+        .comeco ul {
+            
+            list-style: none;
+            padding: 3vw !important;
+            margin: 0vw;
+            display: flex;
+            align-items: center; /* Centraliza verticalmente os itens da lista */
+        }
+        
+        .comeco ul li {
+            display: inline;
+            margin: 0vw 3vw;
+            
+        }
+     
+        .logo{
+            margin-left: -6vw;
+            height: 11vh; /* Ajuste conforme necessário */
+            width: auto;
+
+        }
+        .classe{
+            margin-left: -6.5vw;
+            width: 9vw;
+            height: 7.5vh;
+            
+        }
+        
+        .comeco ul li a {
+            color: #06658D;
+            font-weight: bold;
+            font-size: 2vw;
+            justify-content: space-around;
+            
+        }
+        .comeco ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+            transition: 2s;
+        }
+        .exames{
+            text-decoration: none;
+        }
+        .login{
+            text-decoration: none;
+        }
+        .agendamento{
+            text-decoration: none;
+        }
+        .cirurgias{
+            text-decoration: none;
+        }
+  </style>
+  <!--rodapé-->
+</body>
+</html>

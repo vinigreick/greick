@@ -1,0 +1,770 @@
+/*Responsividade*/
+
+
+  
+  /* Limita a altura e largura dos elementos para não causar estouros */
+  
+  
+        /* navbar */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+        
+        /*Header acima*/
+
+        .Escritorio{
+            height: 110vh;
+            z-index: -1;
+            top: 0vh;
+            position: absolute;
+            right: 0vw;
+            width: 58vw;
+            
+        } 
+
+        .slogan1{
+            font-size: 2vw;
+            color: #06658D;
+            margin-top: 15vh;
+            
+          }
+        .cima .slogan2 {
+            margin-top: -1vh;
+            font-size: 3.5vw;
+             
+          }
+      
+        .btslogan{
+            color: rgb(255, 255, 255);
+            background-color: #06658D;
+            border-radius: 5vw;
+            border: none ;
+            padding: 2vw 5vw !important;
+            font-size: 1.5vw;
+            cursor: pointer;
+            transition: 0.5s;
+          }
+        .btslogan:hover{
+            background-color: #39b4e8d2;
+            transition: 0.5s;
+            box-shadow: 1vw 0.7vw 0.8vw #888888;
+        }  
+        .cima{
+            margin-left: 5vw;
+        }
+        .ondas{
+            z-index: -2;
+            position: absolute;
+            width: 60vw;
+            height: 40vh;
+            top: 55vh;
+            left: -5vw;
+        }
+        
+        /*Quem Somos*/
+        .Quem_Somos{
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            margin: 20vw 13vw;
+            margin-top: 15vw;
+        }
+        
+        .branco{
+            width: 80vw;
+            background: #ffffff;
+            height: 76vh;
+            position: absolute;
+            top: 120vh;
+            margin: 2vw 9vw;
+            
+            border-radius: 0.4vw;
+            z-index: -1;
+            box-shadow: 0 0.3vw 0.7vw rgba(0, 0, 0, 0.3), 0 0.5vw 1.9vw rgba(0, 0, 0, 0.19);
+
+        }
+        .medico{
+            margin-top: 7vh;
+            width: 35vw;
+            height: 80vh;
+           border-radius: 2vw;
+            
+        }
+        .letras_ao_lado{
+            margin-top: 7vh;
+            margin-left: 8vw;
+        }
+        
+        .QS{
+            font-size: 2.5vw;
+            color: #06658D; 
+        }
+        
+        .missao{
+            font-size: 4vw;
+            margin-top: -1.5vh;
+        }
+
+        .letras_ao_lado p{
+            font-size: 1.5vw;
+            text-align:justify;
+        }
+
+
+/*Terceira Parte*/
+.bloco01{
+    width: 100.7vw;
+    background: #fffffffa;
+    height: 40vh;
+    position: absolute;
+    top: 197vh;
+    margin: 2vw 0vw;
+    margin-left: -2vw;
+    border-radius: 0.4vw;
+    z-index: -1;
+   
+}
+.linhas hr{
+    margin: 2vw 10vw;
+    border: 0; 
+    border-top: 0.3vw dashed #000000;
+    font-size: 1vw;
+    }
+    .tudados{
+        margin-top: -30vh;
+    }
+    .Dados{
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        color: #06658D;
+        margin-top: 1vh;
+    }
+    .Dados h1{
+        font-size: 4vw;
+    }
+    .Dados p{
+        font-size: 1.5vw;
+        margin-top: -3vh;
+    }
+    .Dados ion-icon{
+        font-size: 3vw;
+        margin-top: 3.2vw;
+        margin-left: 1vw;
+        transition: 2s;
+
+    }
+    .Dados ion-icon:hover{
+        transform: translatey(-1vw);
+        transition: 2s;
+    }
+    
+    .anos div{
+        display: flex;
+    }
+    .anos ion-icon{
+        color: #BF2AC2;
+        margin-top: 3.5vw;
+    }    
+    .anos p{
+        text-align: center;
+    }
+    
+    .clientes div{
+        display: flex;
+    }
+    .clientes ion-icon{
+        margin-left: 0vw;
+        color: #ECF022 ;
+    }    
+    .clientes{
+        margin-left: 5vw;
+    }
+    
+    
+    .consultas div{
+        display: flex;
+    }
+    .consultas ion-icon{
+        margin-left: 0vw;
+        color: #c5c5c0f2 ;
+    }
+    .consultas{
+        margin-left: 5vw;
+    }
+
+    .membros div{
+        display: flex;
+    }
+    .membros ion-icon{
+        margin-left: 0vw;
+        color: #18b56cf2 ;
+    }
+    
+    .membros{
+        margin-left: 5vw;
+    }
+    .membros p{
+        margin-left: -1.5vw;
+        text-align: center;
+    }
+
+    /*Quarta Parte - Profissionais*/
+
+    .centro{
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        flex-direction: column;
+
+    }
+    .centro h3{
+        margin-top: 6vw;
+        font-size: 1.1vw;
+        color: #bec421;
+        font-weight: 300;
+        
+    }
+    .centro h1{
+        font-size: 3vw;
+        margin-top: -1vw;
+        color: #1233a0;
+    }
+    .centro h4{
+        margin-top: -1vw;
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .centro img{
+        margin-top: 0.5vw;
+        width: 8vw;
+        height: auto;
+    }
+    #com{
+        margin-top: -0.2vw;
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .estrelas img{
+        width: 2vw;
+        margin: -1.5vw -0.2vw;
+        margin-top: 0vw;
+        margin-bottom: 0;
+    }
+
+    /*Carrossel das Avaliações*/
+
+    
+    .carrossel_avaliacoes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7EF29D", endColorstr="#72B8EB", GradientType=1 );
+        
+        width: 85vw;
+        height: 45vh;
+        margin: 0vw 6vw;
+        border-radius: 0.5vw;
+    }
+    .cimas{
+        display: flex;
+       margin-top: -5vw;
+    }
+    .perfil{
+        height: 2.5vw;
+        width: 2.5vw;
+        margin-top: 6vh;
+        margin-left: -10vw;
+        margin-top: -2.6vw;
+    }
+    .texto_data{
+        margin-left: 1.5vw;
+        margin-top: -4.75vw;
+    }
+    .texto_data h5{
+        margin-top: -2vw;
+        font-size: small;
+        font-weight: 200;
+    }
+    .google{
+        position: relative;
+        left: 10vw;
+        bottom: 5vh;
+        width: 2vw;
+    }
+    .estrelas2 img{
+        width: 1.1vw;
+        margin: 0vw -0.3vw;
+        bottom: 1.2vw;
+        right: 6.6vw;
+        position: relative;
+    }
+    .verificado{
+        position: relative;
+        left: -6vw;
+    }
+    .opniao{
+        margin: -1vw 1.2vw;
+        margin-bottom: -6vw;
+    }
+    .cardlista .card_item h6{
+        font-weight: bold;
+        font-size: 1vw;
+    }
+    .car1{
+        overflow: hidden;
+        max-width: 120vw;
+        margin: 0 7vw 5.5vw;
+        margin-top: 6vw;
+        
+    }
+    .cardlista .card_item{
+        color: hsl(0, 0%, 0%);
+        user-select: none;
+        height: 14vw;
+        font-size: 1.3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.2vw;
+        background: #F4F4F4;
+        backdrop-filter: blur(3vw);
+        border: 0.1vw solid rgba(255,255,255,0.5);
+          
+    }
+    
+    .car1 .swider_pagination_bullet{
+        background: #b82525;
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+    .car1 .swiper-slide_button{
+        color: #000000;
+        margin: 3.5vw;
+        transition: 0.9s ease;
+        margin-top: -2vh;
+        
+    }
+    .car1 .swiper-slide_button:hover{
+        color: #1b8ecc;
+        transition: 1s;
+    }
+
+    @media (max-width:768px){
+        .car1{
+            margin: 0 1vw 4vw;
+        }
+        .car1 .swiper-slide_button{
+            display: none;
+        }
+    }
+
+
+
+    /* Quinta Parte - Serviços */
+        .medico_cirurgia{
+            position: absolute;
+            width: 25vw;
+            height: 40vw;
+            border-radius: 1vw 0vw;
+            margin-top: 7vw;
+            margin-left: 12vw;
+            transition: 0.6s;
+        }
+        .medico_cirurgia:hover{
+            border-radius: 0vw 1vw;
+            transition: 0.6s;
+            transform: translatey(-1vw);;
+        }
+    .tudo_servico{
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        color: #000000;
+        margin: 7vw 12vw;
+    }
+    .centro2{
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        margin-top: 5vw;
+    }
+    .centro2 h1{
+        font-size: 4vw;
+        
+    }
+    .foto_cirurgias{
+        width: 24vw;
+        height: 10vw;
+        border-radius: 1vw 0vw;
+        transition: 0.6s;
+        margin-right: 5vw;
+    }
+    /* Adiciona uma altura mínima ao <details> para evitar colapsos bruscos */
+details {
+    position: relative; /* Garante que o conteúdo do <details> não afete o layout ao redor */
+    min-height: 4vw; /* Ajuste conforme necessário */
+  }
+  
+  .conteudo {
+    overflow: hidden; /* Impede que o conteúdo do acordeão afete o layout ao redor */
+    height: auto;
+    max-height: 0; /* Define altura inicial como 0 */
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+  
+  details[open] .conteudo {
+    max-height: 50vw; /* Define uma altura máxima alta suficiente para o conteúdo */
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+  
+    
+    .btn-servicos{
+        
+        color: rgb(255, 255, 255);
+        background-color:  #06658D;
+        border-radius: 1vw;
+        border: none ;
+        padding: 1vw 1vw !important;
+        font-size: 1.5vw;
+        cursor: pointer;
+        transition: 0.5s;
+        margin: 5vw 13vw ;
+    }
+    .btn-servicos:hover{
+        background-color: #90cae2;
+        color: #000;
+        transform: translatey(-1vw);;
+        transform: 0.5s;
+    }
+    .olhos{
+        margin-left: 2vw;
+    }
+    .olhos h1{
+        margin-left: 0.75vw;
+        margin-top: -1vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    section{
+        width: 40vw;
+        max-width: 40vw;
+    }
+    
+    section details{
+        font-size: 1.8vh;
+    }
+    
+    section details summary{
+        background-color: #ffffff;
+        padding: 2%;
+        border-bottom: 2px solid #282828;
+        border: #000 #fff solid 0.1vw;
+        margin-left: 1vw;
+        font-weight: 700;
+        transition: 0.5s;
+        &:focus {
+            border-bottom: 2px solid #ffffff;
+            transition: 0.2s;
+          }
+          font-size: 1.5vw;
+        cursor: pointer;
+    }
+    section details summary:hover{
+        border-bottom: 2px solid #ffffff;
+        transition: 0.2s;
+    }
+    
+    section details p{
+        background-color: #ffffff;
+        transition: all .5s;
+        max-width: 39vw;
+        margin-left: 1vw;
+        font-weight: 500;
+        font-size: 1.2vw;
+    }
+
+   /* Parte do Lugar */
+   
+   .CVG{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+  
+   
+   .container{
+       position: absolute;
+       margin-top: 40vh;
+       left: 50vw;
+       transform: translate(-50%, -50%);
+       width: 90vw;
+       height: 80vh;
+       background: #f5f5f5;
+       box-shadow: 0 3vw 5vw #dbdbdb;
+   }
+   
+   .container .slide .item{
+       width: 15vw;
+       height: 40vh;
+       position: absolute;
+       top: 50vh;
+       transform: translate(0, -50%);
+       border-radius: 2vw;
+       box-shadow: 0 0vw 1vw #505050;
+       background-position: 90vw 50%;
+       background-size: cover;
+       display: inline-block;
+       transition: 0.5s;
+   }
+   
+   
+   .slide .item:nth-child(1),
+   .slide .item:nth-child(2){
+       top: 0;
+       left: 0;
+       transform: translate(0, 0);
+       border-radius: 1vw;
+       width: 90vw;
+       height: 40vw;
+   }
+   
+   
+   .slide .item:nth-child(3){
+       left: 50vw;
+   }
+   .slide .item:nth-child(4){
+       left: calc(54vw + 15vw);
+   }
+   .slide .item:nth-child(5){
+       left: calc(50vw + 0vw);
+   }
+   
+   .slide .item:nth-child(n + 6){
+       left: calc(50vw + 0vw);
+       opacity: 0;
+   }
+   
+   
+   
+   .item .content{
+       position: absolute;
+       top: 15vw;
+       left: 5vw;
+       width: 30vw;
+       text-align: left;
+       color: #eee;
+       transform: translate(0, -50%);
+       font-family: system-ui;
+       display: none;
+   }
+   
+   
+   .slide .item:nth-child(2) .content{
+       display: block;
+   }
+   
+   
+   .content .name{
+    position: relative;
+    top: 0.3vw;
+       font-size: 4vw;
+       text-transform: uppercase;
+       font-weight: bold;
+       opacity: 0;
+       animation: animate 0.5s ease-in-out 1 forwards;
+       padding-bottom: 0vw;
+        
+       margin-left: 3vw;
+       margin-right: 3vw;
+       border-bottom: #ffffff solid 0.2vw;
+
+   }
+   
+   .content .des{
+        position: relative;
+       margin: 0vw 3vw ; 
+       top: 1vw;
+       margin-bottom: 2vw;
+       
+       opacity: 0;
+       animation: animate 0.5s ease-in-out 0.3s 1 forwards;
+       font-size: 1.5vw;
+      
+   }
+   .content .fundo{
+    
+    background-color: rgba(46, 42, 42, 0.6); /* Cor com opacidade aplicada ao fundo */
+    opacity: 0.6;
+    width: 40vw;
+    height: 20vw;
+    z-index: 1;
+    border-radius: 1vw;
+    animation: animate 0.5s ease-in-out 1 forwards;
+    margin-top: 1vw;
+    
+   }
+   .content .fundo_maior{
+    width: 40vw;
+    height: 25vw;
+   }
+
+   
+   
+   @keyframes animate {
+       from{
+           opacity: 0;
+           transform: translate(0, 10vw);
+           filter: blur(3.3vw);
+       }
+   
+       to{
+           opacity: 1;
+           transform: translate(0);
+           filter: blur(0);
+       }
+   }
+   
+   
+   
+   .button{
+       width: 100%;
+       text-align: center;
+       position: absolute;
+       bottom: 1.5vw;
+   }
+   
+   .button button{
+       width: 2vw;
+       height: 0.523vw;
+       border-radius: 0.8vw;
+       border: none;
+       cursor: pointer;
+       margin: 0 0.5vw;
+       background: transparent;
+       transition: 0.3s;
+       color: #fff;
+   }
+   
+   .button button:hover{
+       background: transparent;
+       color: #4ec2dd;
+   }
+   
+
+  
+   
+   
+
+   /*Carrossel Convenios*/
+   .bloco{
+    background: #000;
+    width: 40vw;
+    height: 40vw;
+    margin-left: 10vw;
+   }
+   .Convenios{
+    margin-top: 10vw;
+   }
+   .Convenios .centro{
+    color: #9dbfce;
+    border-bottom: 2px solid #000; /* Adiciona uma linha embaixo */
+    padding-bottom: 5px;
+    margin: 0vw 25vw;
+   }
+   .carrossel_convenios{
+    margin: 0vw 10vw;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.822);
+        
+        width: 75vw;
+        height: 45vh;
+        border-radius: 0.5vw;
+   }
+
+   .cardlista .card_item .toast-btn-convenios{
+    font-size: 1.25vw;
+    padding: 1vw 3.5vw;
+    color: #030728;
+    border-radius: 0.6vw;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 0.1vw solid transparent;
+    transition: 0.5s ease;
+    width: 10vw;
+    height: 6vh;
+    margin-top: 1vh;
+    }
+    .cardlista .card_item .toast-btn-convenios p{
+        margin-top: -2vh;
+    }
+    
+    .cardlista .card_item .imagem_convenio{
+        width: 15vw;
+        height: 10vw;
+        margin-bottom: -0.5vw;
+        border: 0.3vw solid #fff;
+        padding: 0.4vw;
+    }
+
+    .Convenios .cardlista .card_item{
+        color: hsl(0, 0%, 0%);
+        user-select: none;
+        height: 14vw;
+        font-size: 1.3vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.2vw;
+        background: #ffffff;
+        backdrop-filter: blur(3vw);
+        border: 0.1vw solid rgba(255,255,255,0.5);
+          
+    }
+
+    
+    /*Footer*/
