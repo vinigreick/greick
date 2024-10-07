@@ -1,20 +1,9 @@
 *{
   font-family: "Inconsolata", monospace;
- 
+  
 }
 
-header {
-  background-color: #eaeaea;
-  color: #06658D;
-  padding: 10px 0;
-  text-align: center;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  height: 65px; 
-  margin-top: 1%;
-  border-radius: 25px;
-}
+
 .comeco {
   display: flex;
   align-items: center; 
@@ -219,8 +208,8 @@ border-radius: 40px;
 background-color: #4CABD4;
 width: 324px;
 height: 5px;
-top: -93.7vw;
-left: -385px;
+top: -116vw;
+left: -292px;
 }
 
 .linha2 hr{

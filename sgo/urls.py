@@ -37,4 +37,6 @@ urlpatterns = [
     # Inclui as URLs da aplicação 'core', acessíveis sob o caminho 'home/'.
     # O arquivo 'core.urls' deve definir suas próprias URLs específicas da aplicação.
     path('home/', include('core.urls')),
+  
+    
 ]
