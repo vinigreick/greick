@@ -154,6 +154,8 @@ margin-top: -66%;
 color: #3895EC;
 font-weight: 700;
 line-height: 1.2  ;
+position: relative;
+top: -4vw;
 }
 
 .p2{
@@ -161,6 +163,8 @@ font-size: 80%;
 text-align: left;
 margin-left: 40vw;
 line-height: 1.2;
+position: relative;
+top: -4vw;
 }
 
 .botao1  button{
@@ -204,11 +208,32 @@ border-radius: 40px;
 }
 
 
+.botagend {
+  color: rgb(255, 255, 255);
+  background-color: #06658D;
+  border-radius: 5vw;
+  border: none ;
+  padding: 2vw 5vw !important;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  left: 48vw;
+}
+.botagend:hover{
+  background-color: #39b4e8d2;
+  transition: 0.5s;
+  box-shadow: 1vw 0.7vw 0.8vw #888888;
+}
+
+
+
 .linha hr{
 background-color: #4CABD4;
 width: 324px;
 height: 5px;
-top: -116vw;
+position: relative;
+top: -110vw;
 left: -292px;
 }
 
@@ -222,14 +247,14 @@ position: relative;
 }
 
 .card1{
-background-color: #acbeda;
-width: 25vw;
-height: 75vh;
-position: relative;
-top: 15vw;
-z-index: 1;
-border-radius: 40px;
-right: 40px;
+  background-color: #acbeda;
+  width: 25vw;
+  height: 75vh;
+  position: relative;
+  top: 15vw;
+  z-index: 1;
+  border-radius: 40px;
+  right: 40px;
 }
 
 .img1 img{
@@ -252,8 +277,8 @@ text-size-adjust: 10;
 align-items: center;
 font-size: 2vw;
 font-weight: 700;
-left: 9vw;
-top: -18vw;
+left: 14vw;
+top: -15vw;
 margin-right: 40%;
 font-size: 1.5rem;
 margin-inline: auto;
@@ -261,19 +286,19 @@ position: relative;
 width: min(60ch, 100%);
 animation: appear 1ms ease-in-out;
 animation-timeline: view();
-animation-range: cover 0% cover 50%;
+animation-range: cover 00% cover 50%;
 }
 
 @keyframes appear {
-from {
-  opacity: 0;
-  translate: 100px 0;
-}
+  from {
+    opacity: 0;
+    translate: 100px 0;
+  }
 
-to {
-  opacity: 1;
-  translate: 0 0;
-}
+  to {
+    opacity: 1;
+    translate: 200px 0;
+  }
 }
 
 .logo2 img{
@@ -310,7 +335,7 @@ background-color: #acbeda;
     font-size: 2vw;
     font-weight: 700;
     position: relative;
-    left: 9vw;
+    
     top: -40vw;
     font-size: 1.5rem;
     margin-inline: auto;
@@ -318,7 +343,7 @@ background-color: #acbeda;
     animation: app 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
-    left:-10vw;
+    left:-15vw;
 }
 
 @keyframes app {
@@ -339,7 +364,7 @@ background-color: #acbeda;
  
   /*SEGUNDA PARTE DA PAGINA*/
 
-.botao2  {  
+.bot2  {  
   position: relative;
   top: -19vw;
   right: -30vw; 

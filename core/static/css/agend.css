@@ -127,7 +127,6 @@ a:visited{
     
 .fundo {
     position: relative;
-    display: inline-block;
     padding: 70px;
     font-size: 18px;
     border: 5px solid transparent;
@@ -135,9 +134,9 @@ a:visited{
     width: 40%;
     height: 40vw;
     left: 32vw;
+    top: 10VW;
     border-radius: 5vw;
     animation: wave-border 10s infinite linear;
-    top: -8VW;
 }
     
     

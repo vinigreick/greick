@@ -225,22 +225,19 @@ body{
         
 
         .botservicos {
-            color: #ffffff;
-            background-color: #06658D ;
-            width: 15vw;
-            height: 10vh;
+            color: rgb(255, 255, 255);
+            background-color: #06658D;
             border-radius: 5vw;
-        }
-
-        .botservicos a{
-            text-decoration: none;
-
-        }
-        .botservicos:visited{
-            text-decoration: none;
-        }
+            border: none ;
+            padding: 2vw 5vw !important;
+            font-size: 1.5vw;
+            cursor: pointer;
+            transition: 0.5s;
+          }
         .botservicos:hover{
-            text-decoration: none;
+            background-color: #39b4e8d2;
+            transition: 0.5s;
+            box-shadow: 1vw 0.7vw 0.8vw #888888;
         }
 
 
