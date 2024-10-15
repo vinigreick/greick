@@ -1,20 +1,29 @@
+
+const botao2 = document.querySelector('.botao2');
+
+botao2.addEventListener('click', handleVerMaisClick);
+
+function handleVerMaisClick() {
+  const el = 'card3'; 
+  botao2(el);
+}
+
+function handleVerMenosClick() {
+  const el = 'card4'; 
+  botao2(el);
+}
+
 function botao2(el) {
-    var display = document.getElementById(el).style.display;
-    if(display == "none"){
-        document.getElementById(el).style.display = 'block';        
-    }                    
-    else{
-        document.getElementById(el).style.display = 'none';
-    }
-
-    const botao2 = document.querySelector('.botao2');
-
-    botao2.addEventListener('click', () => {
-      const conteudo = document.getElementById('conteudo');
-      const footer = document.querySelector('footer');
-      botao2.parentNode.removeChild(botao2);
-      footer.parentNode.insertBefore(botao2, footer);
-      botao2.innerHTML = '<div class="pb">Ver menos</div>';
-    });
-
-}   
+  var display = document.getElementById(el).style.display;
+  if (display == "none") {
+    document.getElementById(el).style.display = 'block';
+    botao2.innerHTML = '<div class="pb">Ver menos</div>';
+    botao2.removeEventListener('click', handleVerMaisClick);
+    botao2.addEventListener('click', handleVerMenosClick);
+  } else {
+    document.getElementById(el).style.display = 'none';
+    botao2.innerHTML = '<div class="pb">Ver mais</div>';
+    botao2.removeEventListener('click', handleVerMenosClick);
+    botao2.addEventListener('click', handleVerMaisClick);
+  }
+}
